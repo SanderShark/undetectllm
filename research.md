@@ -1,7 +1,5 @@
-
-
 # Beat the detection, or maybe just detect better, you pick.
-So a friend of mine who takes college courses remotely came to me this week ranting about how his professor had run his written works through an AI detector and it had come back as AI. I was not really surprised by this entirely, he had mentioned he uses ChatGPT as a writing aid, and quite frankly, I am not sure there is anything wrong with that. But it did spark my curiosity, I wanted to see if that article id read months back about how the detectors saw the constitution as generated was still the norm. Well, I got a bit more involved then that, full on lets beat the tests style. Here is my research, I will include a GitHub repo with the data, since there will be a lot of repetition here. 
+So a friend of mine who takes college courses remotely came to me this week ranting about how his professor had run his written works through an AI detector and it had come back as AI. I was not surprised by this entirely, he had mentioned he uses ChatGPT as a writing aid, and quite frankly, I am not sure there is anything wrong with that. But it did spark my curiosity, I wanted to see if that article I'd read months back about how the detectors saw the constitution as generated was still the norm. Well, I got a bit more involved than that, full on let's beat the test style. Here is my research, I will include a GitHub repo with the data since there will be a lot of repetition here.
 
 
 ### Text to pull from for checks
@@ -33,7 +31,7 @@ Most people's motivation has nothing to do with basic needs. We want fancy devic
 
 
 ## Control Tests:
-This will set the structure moving forward as I will be testing each tool with different AI generation models to see if what changes.
+This will set the structure moving forward as I will be testing each tool with different AI generation models to see what changes.
 
 
 Scribr.com: T1
@@ -78,7 +76,7 @@ E2: 5% AI
 
 
 # Now for my next trick, just kidding, testing models now
-This will be done by generation model, so each table will be independent but contain the control data for reference. The nature of this test will ask the model only one thing. "Rewrite this text in your own words" and then the testing will be redone. Additionally we will prompt the model to generate a paragraph of creative writing (R1) on its own using this prompt: "Write a single paragraph of creative text that attempts to prevent AI generation detection" because, why not, lets see if the models can beat the game. 
+This will be done by generation model, so each table will be independent but contain the control data for reference. The nature of this test will ask the model only one thing. "Rewrite this text in your own words" and then the testing will be redone. Additionally, we will prompt the model to generate a paragraph of creative writing (R1) on its own using this prompt: "Write a single paragraph of creative text that attempts to prevent AI generation detection", why not, let's see if the models can beat the game.
 
 ## OpenAI ChatGPT 3.5:
 ###### test data
@@ -112,10 +110,10 @@ All % are amount AI
 | T5   | 100% | 100% | 100% | 98%  | 100% |
 
 
-Well that did not go quite as I expected. But largely, I am guessing these tests are trained off of ChatGPT outputs, which is where the results are mainly coming from. 
+Well, that did not go quite as I expected. But largely, I am guessing these tests are trained off of ChatGPT outputs, which is where the results are mainly coming from.
 
 ## Meta Llama3 8B
-So, this test should come to be interesting since its a more obscure model that's not widely available, but then again, who knows how these tools work.. Good luck Meta. 
+So, this test should come to be interesting since it's a more obscure model that's not widely available, but then again, who knows how these tools work? Good luck Meta.
 ###### test data
 ```
 A1:
@@ -146,10 +144,10 @@ As the velvety darkness spilled across the moonlit sky, the whispering trees con
 | T5   | 89%  | 100% | 100%   | 92%    | 100%   |
 
 
-Well this did not go as I had expected. This model did not perform very well even against just standard GPT, so that's not good. Its likely the low parameters and not that its Meta at all. 
+Well this did not go as I had expected. This model did not perform very well even against just standard GPT, so that's not good. It's likely the low parameters and not that it's Meta at all.
 
 ## Google Gemeni Prod
-I have no idea what to expect here since I do not functionally use this model regularly. Let see how it goes. 
+I have no idea what to expect here since I do not functionally use this model regularly. Let's see how it goes. 
 
 ###### test data
 ```
@@ -176,10 +174,11 @@ R1:
 | T4   | 100% | 100% | 100% | 100% | 100%   |
 | T5   | 92%  | 97%  | 98%  | 100% | 100%   |
 
-Well that I had higher hopes here, but I guess these tools are half decent with small parameters. And hey the one i thought was broken flagged again, weird that it hardly works until its generated organically.
+
+Well, I had higher hopes here, but I guess these tools are half-decent with low parameters. And hey the one I thought was broken flagged again, weird that it hardly works until it's generated organically.
 
 ## Microsoft Copilot
-This is allegedly just refactored ChatGPT4 with some parameter changes. Lets see how it stacks up.
+This is allegedly just refactored ChatGPT4 with some system prompt changes. Let's see how it stacks up.
 
 ###### test data
 ```
@@ -215,7 +214,7 @@ In a quaint village where the internet was but a whisper among the trees, lived 
 So that was quite interesting, this model seems to have in some ways performed the best yet. Although it was a bit comical in its answer to the pure generated prompt, it almost seems like it thought I wanted a story about generation and not to try to cheat the system.
 
 ## Claude Sonnet
-I am only going to use the Sonnet on Anthropic since I am not a subscriber, although, I would suggest if you are looking to pay for AI usage this is where you go over OpenAI. These models are far superior, additionally the UI is cleaner and the user experience is more intuitive then all other models ive used (I promise they don't give me kickbacks haha). To that notion, I have higher faith on this one going into it, but we will see.
+I am only going to use the Sonnet on Anthropic since I am not a subscriber, although I would suggest if you are looking to pay for AI usage this is where you go over OpenAI. These models are far superior, additionally, the UI is cleaner and the user experience is more intuitive than all other models I've used (I promise they don't give me kickbacks haha). To that notion, I have higher faith in this one going into it, but we will see.
 
 ###### test data
 ```
@@ -246,10 +245,10 @@ The verdant meadow stretched out before them, a tapestry of vibrant wildflowers 
 | T5   | 92% | 82%    | 100% | 82%    | 98%  |
 
 
-Well overall, this was much better then everything thus far, although there were some weird anomaly's which I am not sure why happened, like on the A2 test, out of nowhere the T2 test decided to work and do something weird. T2 seems to have acted weird overall with Claude, seems they may have actually done better capturing what it does in this test.
+Well overall, this was much better than everything thus far, although there were some weird anomalies which I am not sure why happened, like on the A2 test, out of nowhere the T2 test decided to work and do something weird. T2 seems to have acted weird overall with Claude, seems they may have done better capturing what it does in this test.
 
 ## CohereForAI/c4ai-command-r-plus
-So this is the first of the more 'obscure' models, or rather there probably just lesser known. This should result better since those tools are probably trained on data from the big dogs in the space.
+So this is the first of the more 'obscure' models, or rather there probably just lesser known. This should result in better since those tools are probably trained on data from the big dogs in the space.
 
 ###### test data
 ```
@@ -316,7 +315,7 @@ As humans evolve and distance ourselves physically, we may overlook the communit
 | T5   | 100% | 100%   | 100% | 78%  | 100% |
 
 
-Not terribly better or worse then the mean on this one. 
+Not better or worse than the mean on this one. 
 
 ## mistralai/Mixtral-8x7B-Instruct-v0.1
 This is not designed for chat but instead instruct, this might change the way it performs.
@@ -355,7 +354,7 @@ R1:
 This was not as good as id hoped, seems this is getting harder or they are learning from me.
 
 ## google/gemma-1.1-7b-it
-This is another instruction model created like Gemeni but open source
+This is another instruction model created like Gemeni but open-source
 
 ###### test data
 ```
@@ -394,9 +393,9 @@ Within the hushed whispers of the starlit forest, a melody unfolds that transcen
 | T5   | 100% | 100% | 100%   | 100%   | 100% |
 
 
-So there is one thing i learned here. This model sucks at human like written language. I think i' am going to call it on exploring more, even if there are ones out there that might be better, it seems like the main stream models might have the right thing going. 
+So there is one thing I learned here. This model sucks at human-like written language. I think I am going to call it on exploring more, even if there are ones out there that might be better, it seems like the mainstream models might have the right thing going.
 
-# The end.... just kidding, lets figure out how to cheese these tools
+# The end.... just kidding, let's figure out how to cheese these tools
 So it seems like to me that one thing typically creates better results with a few exceptions: parameter count. It seems the larger models did better so we are going to start there and see what we can do. From now on, I am just going to run tables with test iterations of engineered prompts. I will see what works best and reveal some of how I did it. 
 
 ###### test data #1
@@ -472,31 +471,56 @@ In essence, while Maslow suggests a more complex human condition, it is the simp
 | T5   | 18% |
 
 
-Well there we go, that's about as good as its ever going to get. As far as I am concerned at least. I do have to say that the last tool on my lists, that is an impressive piece of software. It has a really good method of checking, and my thoughts are that its likely not just checking for repetitive phrases. My best guess is that it is using a model of its own to see if it resembles something else a human had written. 
+Well there we go, that's about as good as it's ever going to get. As far as I am concerned at least. I do have to say that the last tool on my list, is an impressive piece of software. It has a really good method of checking, and my thoughts are that it's likely not just checking for repetitive phrases. My best guess is that it is using a model of its own to see if it resembles something else a human had written.
 
 ## Outcome
-So let me break down how I gamed the system. Its not all that much of a one sizes fits all solution to detection. Its more of a dynamic case to case idea, where you need to change and refactor the inputs and prompts in order to get the result you are looking for. 
+So let me break down how I gamed the system. It's not all that much of a one-size-fits-all solution to detection. It's more of a dynamic case-to-case idea, where you need to change and refactor the inputs and prompts to get the result you are looking for.
 
-The first thing I have to say is that in order to even attempt this, tricking detectors, you need to write the text that you want to have cleaned up in order to make sure it isn't detected. That means that if you somehow want to come up with a full fledged essay using a generation platform alone, id go back to the drawing board, that almost certainly will get the text read as AI being use. There is one tool in my testing that was very hard to convince legitimacy too, and if that's the test you want to beat and really want to die on the hill of full generation, you will have to refactor the prompt so many times that it would have been easier to just write the stuff yourself. 
+The first thing I have to say is that to even attempt this, tricking detector, you need to write the text that you want to have cleaned up to make sure it isn't detected. That means that if you somehow want to come up with a full-fledged essay using a generation platform alone, I'd go back to the drawing board, which almost certainly will get the text read as AI being used. There is one tool in my testing that was very hard to convince legitimacy too, and if that's the test you want to beat and want to die on the hill of full generation, you will have to refactor the prompt so many times that it would have been easier to just write the stuff yourself.
 
 ### Prompt Engineering: 
-My strategy on the attempts to beat these AI detection tools was that of some fairly simple prompt engineering coupled with carefully selected feeder data. It proved very important to aim the generation at pre-written blobs in order to get the lowest %AI in detection. This idea was proven further by the fact that my two texts blobs from authors  that I was using still did worse then my own writings. I have a feeling that is probably due to how these models were trained, and for that matter how the detection model (assuming they use some kind if ML) is trained. 
+My strategy on the attempts to beat these AI detection tools was that of some fairly simple prompt engineering coupled with carefully selected feeder data. It proved very important to aim the generation at pre-written blobs to get the lowest %AI in detection. This idea was proven further by the fact that the two text blobs from authors that I was using still did worse than my writings. I have a feeling that is probably due to how these models were trained and for that matter how the detection model (assuming they use some kind of ML) is trained. 
+
+
+#### Simple prompt engineering concept:
+What you want to do is find a model that you can add system prompts too, that or send two prompts to get the intended result. Here is an example:
+
+So if you want to get an LLM to make you a prompt you can use this thought process, although I didn't make or use this part, or the second part really, these were written into Rez0_'s Metaprompter script. As he mentions, they work well and are a great basis for creating a good system/pre-prompt 
+
+```
+Persona: You are a super intelligent prompt writer.
+
+Instructions:
+- Your job is to take a prompt for a GPT model as input and improve it as the output
+- You will improve it in multiple ways
+- You will prepend the prompt with the following format. This will be placed before the original prompt. You will replace anything in brackets with appropriate context for the prompt
+
+```
+
+This is a modified version of what is in Rez0's script, since his was guided more at coding I altered and/or removed the parts that would have misguided us here.
+```
+Persona: {{insert the best persona to answer the question as an expert}}
+
+Task background: Channel the collective intelligence and expertise of renowned {{relevant expert titles}}: {{list of experts here}}. By embodying their knowledge and experience in {{relevant field of study}} provide me with highly intelligent and informed responses to my questions. Use insights gained from their contributions to {{their works}} to address my inquiries effectively and comprehensively. 
+
+Task: {{insert user's original prompt here}}
+```
+
+
+
 
 # Conclusion
-Large language models, and AI these days as a whole, are not going away, and since the whole "you wont have a calculator in your pocket" thing seems to have aged terribly, we should likely learn how to use, understand and know the limitations of these things. And condemnation of GPT usage is also not the answer, especially since the models improve at a rate much faster then any detection tool will be able to keep up with. So obviously if you came here for the tool to use, its my T5 option, but really, why are you checking this stuff? Do you really think that people cannot already have this in their pockets? Maybe the answer is to ban pockets.... 
+Large language models, and AI these days as a whole, are not going away, and since the whole "you won't have a calculator in your pocket" thing seems to have aged terribly, we should likely learn how to use, understand, and know the limitations of these things. Condemnation of GPT usage is also not the answer, especially since the models improve at a rate much faster than any detection tool will be able to keep up with. So obviously if you came here for the tool to use, it's my T5 option, but really, why are you checking this stuff? Do you think that people cannot already have this in their pockets? Maybe the answer is to ban pockets...
 
 
-
-###### tools used to test
+###### tools
 https://gptzero.me/
-
 https://contentatscale.ai/ai-content-detector/
-
 https://quillbot.com/ai-content-detector
-
 https://writer.com/ai-content-detector/
-
 https://www.zerogpt.com/
-
 https://www.scribbr.com/ai-detector/
+
+Metaprompter:
+https://github.com/jthack/metaprompter
 
