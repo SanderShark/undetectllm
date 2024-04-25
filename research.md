@@ -215,7 +215,7 @@ In a quaint village where the internet was but a whisper among the trees, lived 
 So that was quite interesting, this model seems to have in some ways performed the best yet. Although it was a bit comical in its answer to the pure generated prompt, it almost seems like it thought I wanted a story about generation and not to try to cheat the system.
 
 ## Claude Sonnet
-I am only going to use the Sonnet on Anthropic since I am not a subscriber, although, I would suggest if you are looking to pay for AI usage this is where you go over OpenAI. These models are much better and the UI and features are much better(I promise they don't give me kickbacks haha). To that notion, I have higher faith on this one going into it, but we will see.
+I am only going to use the Sonnet on Anthropic since I am not a subscriber, although, I would suggest if you are looking to pay for AI usage this is where you go over OpenAI. These models are far superior, additionally the UI is cleaner and the user experience is more intuitive then all other models ive used (I promise they don't give me kickbacks haha). To that notion, I have higher faith on this one going into it, but we will see.
 
 ###### test data
 ```
