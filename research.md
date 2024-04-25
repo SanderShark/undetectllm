@@ -1,18 +1,6 @@
 
-###### tools used to test
-https://gptzero.me/
 
-https://contentatscale.ai/ai-content-detector/
-
-https://quillbot.com/ai-content-detector
-
-https://writer.com/ai-content-detector/
-
-https://www.zerogpt.com/
-
-https://www.scribbr.com/ai-detector/
-
-# Beat the detection, or maybe just detect better, you pick.
+# Beat the detection, or maybe just detect better, you pick.Persona: You are a super intelligent prompt writer.
 So a friend of mine who takes college courses remotely came to me this week ranting about how his professor had run his written works through an AI detector and it had come back as AI. I was not really surprised by this entirely, he had mentioned he uses ChatGPT as a writing aid, and quite frankly, I am not sure there is anything wrong with that. But it did spark my curiosity, I wanted to see if that article id read months back about how the detectors saw the constitution as generated was still the norm. Well, I got a bit more involved then that, full on lets beat the tests style. Here is my research, I will include a GitHub repo with the data, since there will be a lot of repetition here. 
 
 
@@ -494,7 +482,21 @@ The first thing I have to say is that in order to even attempt this, tricking de
 ### Prompt Engineering: 
 My strategy on the attempts to beat these AI detection tools was that of some fairly simple prompt engineering coupled with carefully selected feeder data. It proved very important to aim the generation at pre-written blobs in order to get the lowest %AI in detection. This idea was proven further by the fact that my two texts blobs from authors  that I was using still did worse then my own writings. I have a feeling that is probably due to how these models were trained, and for that matter how the detection model (assuming they use some kind if ML) is trained. 
 
+# Conclusion
+Large language models, and AI these days as a whole, are not going away, and since the whole "you wont have a calculator in your pocket" thing seems to have aged terribly, we should likely learn how to use, understand and know the limitations of these things. And condemnation of GPT usage is also not the answer, especially since the models improve at a rate much faster then any detection tool will be able to keep up with. So obviously if you came here for the tool to use, its my T5 option, but really, why are you checking this stuff? Do you really think that people cannot already have this in their pockets? Maybe the answer is to ban pockets.... 
 
-#
 
+
+###### tools used to test
+https://gptzero.me/
+
+https://contentatscale.ai/ai-content-detector/
+
+https://quillbot.com/ai-content-detector
+
+https://writer.com/ai-content-detector/
+
+https://www.zerogpt.com/
+
+https://www.scribbr.com/ai-detector/
 
